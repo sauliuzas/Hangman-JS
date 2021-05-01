@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Hangman</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./styles/main.css" />
+    <script type="text/javascript" src="./js/hangman.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="title">HANGMAN</div>
+
+      <div class="subtitle">Try out your luck with the classic game!</div>
+
+      <div class="difficulty">
+        <input
+          value="Regular mode"
+          type="button"
+          id="normaldiff"
+          class="diffbutton"
+        />
+        <input
+          value="EXTREME MODE"
+          type="button"
+          id="extremediff"
+          class="diffbutton"
+        />
+      </div>
+
+      <div class="information">
+        Use the alphabet below and try to guess the word.
+      </div>
+    </div>
+
+    <div class="body">
+      <div class="alphabet" id="alphabet"></div>
+    </div>
+
+    <div id="word" class="word"></div>
+
+    <div id="lifes" class="lifes"></div>
+
+    <input value="GET HINT" type="button" class="hint" id="hint" />
+  </body>
+</html>
